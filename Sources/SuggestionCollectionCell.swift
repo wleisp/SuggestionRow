@@ -10,7 +10,7 @@ import UIKit
 
 let accessoryViewHeight = CGFloat(40)
 
-open class SuggestionCollectionCell<T: SuggestionValue, CollectionViewCell: UICollectionViewCell>: SuggestionCell<T>, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout where CollectionViewCell: EurekaSuggestionCollectionViewCell, CollectionViewCell.S == T {
+open class SuggestionCollectionCell<T, CollectionViewCell: UICollectionViewCell>: SuggestionCell<T>, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout where CollectionViewCell: EurekaSuggestionCollectionViewCell, CollectionViewCell.S == T {
     
     /// callback that can be used to customize the appearance of the UICollectionViewCell in the inputAccessoryView
     public var customizeCollectionViewCell: ((CollectionViewCell) -> Void)?
