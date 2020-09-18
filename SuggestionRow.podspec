@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
   s.requires_arc = true
   s.ios.source_files = 'Sources/**/*.{swift}'
-  s.dependency 'Eureka', '~> 5.0'
+  s.dependency 'Eureka', '~> 5.3.0'
 end
